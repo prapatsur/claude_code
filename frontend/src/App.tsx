@@ -1,0 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ParticipantView from './pages/ParticipantView'
+import PresentationView from './pages/PresentationView'
+import OrganizerDashboard from './pages/OrganizerDashboard'
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/session/:sessionCode" element={<ParticipantView />} />
+        <Route path="/session/:sessionCode/presentation" element={<PresentationView />} />
+        <Route path="/organizer/:sessionId" element={<OrganizerDashboard />} />
+      </Routes>
+    </Router>
+  )
+}
+
+export default App

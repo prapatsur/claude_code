@@ -1,0 +1,41 @@
+{
+  "name": "audience-engagement-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mobile-friendly audience engagement platform for live Q&A, polls, and quizzes",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build": "npm run build --workspaces",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "keywords": [
+    "audience-engagement",
+    "live-qa",
+    "polls",
+    "quiz",
+    "websocket",
+    "real-time"
+  ],
+  "author": "",
+  "license": "MIT"
+}
