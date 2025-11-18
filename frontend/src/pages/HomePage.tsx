@@ -87,9 +87,19 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Create Session Link */}
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => navigate('/create')}
+            className="text-white underline hover:no-underline opacity-90 hover:opacity-100 text-sm"
+          >
+            Or create a new session as an organizer
+          </button>
+        </div>
+
         {/* Footer */}
-        <div className="mt-6 text-center text-white text-sm">
-          <p className="opacity-90">
+        <div className="mt-4 text-center text-white text-sm">
+          <p className="opacity-70">
             Powered by Audience Engagement Platform
           </p>
         </div>
