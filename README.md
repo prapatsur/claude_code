@@ -153,6 +153,7 @@ MIT
 ## Documentation
 
 - **[Setup Guide (SETUP.md)](./SETUP.md)** - Detailed installation and development setup
+- **[Deployment Guide (DEPLOYMENT.md)](./DEPLOYMENT.md)** - Production deployment and scaling
 - **[Product Requirements Document (PRD)](./PRD.md)** - Features, architecture, and roadmap
 - **[AI Assistant Guide (CLAUDE.md)](./CLAUDE.md)** - Development guidelines and conventions
 
